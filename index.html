@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Best Friend Day Adrika ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ff9ec4,#ffd6e8,#fff5fa);
+    min-height:100vh;
+    overflow-y:auto;
+    display:flex;
+    justify-content:center;
+    padding:30px 15px;
+    position:relative;
+}
+
+/* Floating Hearts */
+
+.hearts span{
+    position:fixed;
+    bottom:-50px;
+    color:#ff4f8b;
+    font-size:22px;
+    animation:float 10s linear infinite;
+    z-index:1;
+}
+
+.hearts span:nth-child(1){left:10%; animation-delay:0s;}
+.hearts span:nth-child(2){left:20%; animation-delay:2s;}
+.hearts span:nth-child(3){left:35%; animation-delay:4s;}
+.hearts span:nth-child(4){left:50%; animation-delay:1s;}
+.hearts span:nth-child(5){left:65%; animation-delay:3s;}
+.hearts span:nth-child(6){left:80%; animation-delay:5s;}
+.hearts span:nth-child(7){left:90%; animation-delay:6s;}
+
+@keyframes float{
+    0%{
+        transform:translateY(0) scale(1);
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-120vh) scale(1.5);
+        opacity:0;
+    }
+}
+
+/* Main Card */
+
+.card{
+    width:100%;
+    max-width:650px;
+    background:white;
+    padding:35px 25px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+    position:relative;
+    z-index:2;
+    animation:fadeIn 1.5s ease;
+    margin:auto;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.glow{
+    font-size:65px;
+    animation:glow 1.5s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px #ff7eb3;
+    }
+    to{
+        text-shadow:0 0 30px #ff2f75;
+    }
+}
+
+h1{
+    color:#ff2f75;
+    margin-top:10px;
+    font-size:2.3rem;
+}
+
+.name{
+    margin-top:15px;
+    color:#444;
+    font-size:1.4rem;
+    font-weight:600;
+}
+
+/* Image */
+
+.friend-img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:20px;
+    margin-top:25px;
+    border:5px solid #ff9ec4;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+
+.friend-img:hover{
+    transform:scale(1.04);
+}
+
+.message{
+    margin-top:25px;
+    color:#666;
+    line-height:1.9;
+    font-size:1.05rem;
+}
+
+/* Typing */
+
+.typing{
+    margin-top:25px;
+    color:#ff2f75;
+    font-size:1.1rem;
+    font-weight:600;
+    min-height:30px;
+}
+
+/* Button */
+
+button{
+    margin-top:30px;
+    padding:14px 28px;
+    border:none;
+    border-radius:40px;
+    background:#ff4f8b;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ff1f6d;
+    transform:scale(1.05);
+}
+
+/* Surprise Box */
+
+#surpriseBox{
+    display:none;
+    margin-top:25px;
+    padding:22px;
+    border-radius:20px;
+    background:#fff0f6;
+    color:#ff2f75;
+    font-size:1.05rem;
+    line-height:1.9;
+    animation:fadeIn 1s ease;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Countdown */
+
+.countdown{
+    margin-top:25px;
+    font-weight:600;
+    color:#555;
+}
+
+/* Music */
+
+.music{
+    margin-top:35px;
+}
+
+.music p{
+    margin-bottom:12px;
+    color:#ff2f75;
+    font-weight:600;
+}
+
+audio{
+    width:100%;
+}
+
+/* Footer */
+
+.footer{
+    margin-top:30px;
+    color:#888;
+    font-size:0.95rem;
+}
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    h1{
+        font-size:2rem;
+    }
+
+    .message{
+        font-size:1rem;
+    }
+
+    .card{
+        padding:30px 20px;
+    }
+
+    .friend-img{
+        width:180px;
+        height:180px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+
+<div class="hearts">
+    <span>❤</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>✨</span>
+    <span>❤</span>
+    <span>💖</span>
+    <span>💕</span>
+</div>
+
+<!-- Main Card -->
+
+<div class="card">
+
+    <div class="glow">💖</div>
+
+    <h1>Happy Best Friend Day</h1>
+
+    <div class="name">
+        For Adrika ✨
+    </div>
+
+    <!-- IMAGE -->
+
+    <img src="./adrika.JPG" alt="Adrika" class="friend-img">
+
+    <div class="message">
+
+        You are honestly one of the most precious people in my life.
+        <br><br>
+
+        Thank you for every smile,
+        every late-night conversation,
+        every stupid joke,
+        every memory,
+        and every moment that became special because of you.
+        <br><br>
+
+        Some friendships are temporary,
+        but you became a part of my comfort and happiness.
+        <br><br>
+
+        No matter what happens,
+        you'll always be someone truly important to me ❤️
+        <br><br>
+
+        Happy Best Friend Day to the person
+        who makes life brighter just by existing 💕
+
+    </div>
+
+    <!-- Typing -->
+
+    <div class="typing" id="typing"></div>
+
+    <!-- Button -->
+
+    <button onclick="showSurprise()">
+        Click For Surprise 🎁
+    </button>
+
+    <!-- Surprise Message -->
+
+    <div id="surpriseBox">
+
+        💖 Dear Adrika 💖
+        <br><br>
+
+        If life gives me thousands of people,
+        I'd still choose your friendship again and again.
+        <br><br>
+
+        Thank you for being my safe place,
+        my happiness,
+        and one of the best chapters of my life ✨
+        <br><br>
+
+        You are genuinely irreplaceable ❤️
+
+    </div>
+
+    <!-- Countdown -->
+
+    <div class="countdown" id="countdown"></div>
+
+    <!-- Music -->
+
+    <div class="music">
+
+        <p>🎵 Playing: Khat</p>
+
+        <audio id="bgMusic" loop>
+            <source src="khat.mp3" type="audio/mp3">
+        </audio>
+
+    </div>
+
+    <div class="footer">
+        Made with ❤️ for Adrika
+    </div>
+
+</div>
+
+<script>
+
+/* Typing Effect */
+
+const text = "Some bonds are simply unforgettable ❤️";
+
+let i = 0;
+
+function typingEffect(){
+
+    if(i < text.length){
+
+        document.getElementById("typing").innerHTML += text.charAt(i);
+
+        i++;
+
+        setTimeout(typingEffect,70);
+    }
+}
+
+typingEffect();
+
+/* Surprise Button */
+
+function showSurprise(){
+
+    const box = document.getElementById("surpriseBox");
+
+    if(box.style.display === "none"){
+
+        box.style.display = "block";
+
+    }else{
+
+        box.style.display = "none";
+    }
+}
+
+/* Countdown */
+
+const futureDate = new Date("June 7, 2027 00:00:00").getTime();
+
+setInterval(function(){
+
+    const now = new Date().getTime();
+
+    const distance = futureDate - now;
+
+    const days = Math.floor(distance / (1000*60*60*24));
+
+    document.getElementById("countdown").innerHTML =
+    "Next Best Friend Day in " + days + " days 💫";
+
+},1000);
+
+/* Auto Play Music */
+
+window.addEventListener('load', () => {
+
+    const music = document.getElementById("bgMusic");
+
+    music.play().catch(() => {
+
+        document.body.addEventListener('click', () => {
+            music.play();
+        }, { once:true });
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
